@@ -1,0 +1,19 @@
+Source: libdisplaycore-driver-aggregate
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-aggregate
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core
+Provides: Aggregate.h
+Description: Display aggregating virtual driver for DisplayCore
+ Aggregates a number of displays into one larger virtual display.
+
+
+
