@@ -26,7 +26,7 @@ class Aggregate : public DisplayCore {
         void setRotation(int rotation);
         void displayOn();
         void displayOff();
-        void invertDisplay(boolean i);
+        void invertDisplay(bool i);
         void initializeDevice() {}
         void setPixel(int x, int y, color_t color);
         void startBuffer();

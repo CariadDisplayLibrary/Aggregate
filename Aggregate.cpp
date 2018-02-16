@@ -65,7 +65,7 @@ void Aggregate::fillScreen(color_t color) {
     }
 }
 
-void Aggregate::invertDisplay(boolean i) {
+void Aggregate::invertDisplay(bool i) {
     for (struct DisplayChunk *scan = _displays; scan; scan = scan->next) {
         scan->dev->invertDisplay(i);
     }
