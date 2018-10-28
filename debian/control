@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Drivers
 Depends: libdisplaycore-core
 Provides: Aggregate.h
-Description: Display aggregating virtual driver for DisplayCore
+Description: Display aggregating virtual driver
  Aggregates a number of displays into one larger virtual display.
 
 
