@@ -40,6 +40,18 @@ pclose($fd);
 
 file_put_contents("debian/changelog", implode("\n", $out) . "\n");
 
+// Wind back one version point
+$min--;
+if ($min < 0) {
+    $min = 9;
+    $maj--;
+}
+
+if ($maj < 0) {
+    $maj = 9;
+    $rel--;
+}
+
 $do = false;
 
 if (file_exists("library.json")) {
