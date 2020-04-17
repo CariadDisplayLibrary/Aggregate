@@ -1,2 +1,2 @@
-Aggregate.cpp libraries/DisplayCore/Aggregate
-Aggregate.h libraries/DisplayCore/Aggregate
+src libraries/DisplayCore/Aggregate
+library.properties libraries/DisplayCore/Aggregate
