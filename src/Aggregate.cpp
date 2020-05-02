@@ -1,6 +1,6 @@
 #include <Aggregate.h>
 
-bool Aggregate::addDisplay(DisplayCore &dev, int x, int y) {
+bool Aggregate::addDisplay(Cariad &dev, int x, int y) {
     DisplayChunk *chunk = (struct DisplayChunk *)malloc(sizeof(struct DisplayChunk));
     if (!chunk) return false;
     chunk->dev = &dev;

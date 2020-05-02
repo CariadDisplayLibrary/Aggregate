@@ -1,10 +1,10 @@
 #ifndef _AGGREGATE_H
 #define _AGGREGATE_H
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
 struct DisplayChunk {
-    DisplayCore *dev;
+    Cariad *dev;
     int x;
     int y;
     int w;
@@ -12,7 +12,7 @@ struct DisplayChunk {
     DisplayChunk *next;
 };
 
-class Aggregate : public DisplayCore {
+class Aggregate : public Cariad {
     private:
         DisplayChunk *_displays;
 
@@ -21,7 +21,7 @@ class Aggregate : public DisplayCore {
             _width = 0;
             _height = 0;
         }
-        bool addDisplay(DisplayCore &dev, int x, int y);
+        bool addDisplay(Cariad &dev, int x, int y);
 
         void setRotation(int rotation);
         void displayOn();

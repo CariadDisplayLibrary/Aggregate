@@ -1,17 +1,18 @@
-Source: libdisplaycore-driver-aggregate
+Source: libcariad-driver-aggregate
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-aggregate
+Package: libcariad-driver-aggregate
+Replaces: libdisplaycore-driver-aggregate
 Section: main
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: Virtual
-Depends: libdisplaycore-core
+Depends: libcariad-core
 Provides: Aggregate.h
 Description: Display aggregating virtual driver
  Aggregates a number of displays into one larger virtual display.
